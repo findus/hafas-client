@@ -16,6 +16,8 @@ const parseTrip = (ctx, t) => {
 	const arr = last(stopovers)
 
 	return {
+		id: t.ref || null,
+
 		origin: dep.stop,
 		destination: arr.stop,
 		line: product ? profile.parseLine(ctx, product) : null,
