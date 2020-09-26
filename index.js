@@ -346,7 +346,7 @@ const createClient = (profile, userAgent, opt = {}) => {
 		}
 		opt = Object.assign({
 			stopovers: true, // return stations on the way?
-			polyline: false, // return a track shape?
+			polyline: true, // return a track shape?
 			subStops: true, // parse & expose sub-stops of stations?
 			entrances: true, // parse & expose entrances of stops/stations?
 			remarks: true // parse & expose hints & warnings?
